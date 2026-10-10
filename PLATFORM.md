@@ -1,19 +1,19 @@
-# Windows 分支
+# macOS 分支
 
-本分支为 EluShell Windows x64 桌面版。macOS 版本见同仓库的 `macos` 分支；两者共享 Electron / React / TypeScript 实现。
+本分支为 EluShell macOS 桌面版，支持 Apple 芯片 arm64 和 Intel x64。Windows 版见同仓库的 `windows` 分支；两者共享 Electron / React / TypeScript 实现。这不是 iPhone/iPad 的 iOS 应用。
 
 ## 开发与构建
 
-安装 Node.js 和 npm 后执行：
+在 macOS 上安装 Node.js 和 npm 后执行：
 
 ```sh
 npm ci
 npm run dev
 npm test
-npm run dist
+npm run dist:mac
 ```
 
-`npm run dist` 构建 Windows NSIS 安装版和便携版，输出到 `release/`。安装包、个人设置、服务器密码和本机测试数据不提交到 Git。
+输出位于 `release/`。现有测试版使用 ad-hoc 签名，未完成 Apple Developer ID 签名、公证及 Mac 真机验收。详细安装和构建说明见 [docs/MACOS.md](docs/MACOS.md)。安装包、个人设置、服务器密码和本机测试数据不提交到 Git。
 
 ## 许可
 
