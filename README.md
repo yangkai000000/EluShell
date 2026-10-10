@@ -2,6 +2,10 @@
 
 面向开发者的 SSH 桌面工作台。保留 FinalShell 的「左侧服务器指标 + 多会话终端 + 底部文件/命令」布局，以浅色工作区和深色终端提升信息层次。
 
+## PDF 操作手册
+
+[下载 EluShell 0.10.9 操作手册（PDF，58 页）](https://github.com/yangkai000000/EluShell/releases/download/manual-v0.10.9/EluShell-Guide-0.10.9.pdf) · [GitHub 发布页](https://github.com/yangkai000000/EluShell/releases/tag/manual-v0.10.9)。手册覆盖 Windows 和 macOS 使用说明；私有仓库需登录有访问权限的 GitHub 账号下载。
+
 ## 运行
 
 0.8.2 固定终端选区浮层，新增文件多选与批量下载、自定义 AI 接口，并用黑点标识已保存密码和 API Key。[发布页面](http://47.105.176.1:8800/elushell-updates/) 同步提供 Windows、Mac 测试包，以及新版操作指南在线阅读、Word 和 PDF 下载。每次发布须执行 [同步发布流程](docs/RELEASING.md)。导出文件包含明文登录密码，仅分享给可信同事；接收人使用 0.8.1 或更新版本导入。
