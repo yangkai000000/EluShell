@@ -2,19 +2,25 @@
 
 面向开发者的 SSH 桌面工作台。保留 FinalShell 的「左侧服务器指标 + 多会话终端 + 底部文件/命令」布局，以浅色工作区和深色终端提升信息层次。
 
-## PDF 操作手册
+## 下载与安装
 
-[下载 EluShell 0.10.9 操作手册（PDF，58 页）](https://github.com/yangkai000000/EluShell/releases/download/manual-v0.10.9/EluShell-Guide-0.10.9.pdf) · [GitHub 发布页](https://github.com/yangkai000000/EluShell/releases/tag/manual-v0.10.9)。手册覆盖 Windows 和 macOS 使用说明；私有仓库需登录有访问权限的 GitHub 账号下载。
+当前发行版本：**0.10.9**。直接从 GitHub 下载：
+
+| 版本 / 文档 | 下载 |
+| --- | --- |
+| Windows x64 安装版（推荐） | [下载](https://github.com/yangkai000000/EluShell/releases/download/v0.10.9/EluShell-Setup-0.10.9-x64.exe) |
+| Windows x64 免安装便携版 | [下载](https://github.com/yangkai000000/EluShell/releases/download/v0.10.9/EluShell-0.10.9-windows-x64.exe) |
+| macOS Apple 芯片测试版 | [下载](https://github.com/yangkai000000/EluShell/releases/download/v0.10.9/EluShell-0.10.9-macos-arm64-preview.zip) |
+| macOS Intel 测试版 | [下载](https://github.com/yangkai000000/EluShell/releases/download/v0.10.9/EluShell-0.10.9-macos-x64-preview.zip) |
+| 操作手册（PDF，58 页） | [下载](https://github.com/yangkai000000/EluShell/releases/download/v0.10.9/EluShell-Guide-0.10.9.pdf) |
+
+[完整发布说明与 SHA256 校验文件](https://github.com/yangkai000000/EluShell/releases/tag/v0.10.9)。
+
+Windows 安装版安装一次后，可从桌面或开始菜单启动，无需安装 Node.js，并继续使用 `%USERPROFILE%/.EluShell` 中已有的连接和设置。便携版每次启动需要解压，日常使用建议选择安装版。
+
+macOS 测试版要求 macOS 12+，使用临时签名，尚未经过 Apple Developer ID 签名、公证及 Mac 真机验收。安装与快捷键说明见 [macOS 测试版说明](docs/MACOS.md)。
 
 ## 运行
-
-0.8.2 固定终端选区浮层，新增文件多选与批量下载、自定义 AI 接口，并用黑点标识已保存密码和 API Key。[发布页面](http://47.105.176.1:8800/elushell-updates/) 同步提供 Windows、Mac 测试包，以及新版操作指南在线阅读、Word 和 PDF 下载。每次发布须执行 [同步发布流程](docs/RELEASING.md)。导出文件包含明文登录密码，仅分享给可信同事；接收人使用 0.8.1 或更新版本导入。
-
-macOS 0.8.2 测试版已提供 Apple 芯片和 Intel 独立 ZIP，要求 macOS 12+。可从 [统一下载页面](http://47.105.176.1:8800/elushell-updates/) 获取。安装、快捷键、构建和验证边界见 [macOS 测试版说明](docs/MACOS.md)。该版本没有 Mac 真机验收，不能等同于已验证的 Windows 发行版。
-
-Windows x64 安装版（推荐）：`release/EluShell-Setup-0.8.2-x64.exe`。安装一次后，从桌面或开始菜单的 EluShell 快捷方式启动，无需安装 Node.js。继续使用 `%USERPROFILE%/.EluShell` 中已有的连接、密码和设置。
-
-免安装便携版：`release/EluShell-0.8.2-windows-x64.exe`。单文件每次启动需要解压，日常使用建议选择安装版。启动和点击「＋」打开新标签页，列表靠上显示最近连接，双击服务器连接；没有最近记录时显示已保存连接。不含演示环境，也不自动连接服务器。
 
 0.8.0 新增 [AI 命令助手](docs/AI-ASSISTANT.md)，支持 DeepSeek / Kimi、思考强度、流式对话和本地历史。连接管理改为紧凑单行列表与独立编辑弹窗，文件传输面板自动展开并支持点击外部关闭。详见 [版本说明](docs/RELEASE-0.8.0.md)。
 
