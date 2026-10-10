@@ -1,0 +1,210 @@
+.certificate-tool {
+  height: 100%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  background: #f6f8fb;
+  color: #263e55;
+}
+.certificate-tool > header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+  background: white;
+  border-bottom: 1px solid #dce4ed;
+}
+.certificate-tool h2 {
+  margin: 0 0 3px;
+  font-size: 17px;
+}
+.certificate-tool h3 {
+  font-size: 13px;
+  margin: 0 0 12px;
+}
+.certificate-tool > header span,
+.certificate-tool p {
+  font-size: 12px;
+  color: #687e92;
+  line-height: 1.7;
+}
+.certificate-tool > header small {
+  margin-left: auto;
+  color: #098773;
+}
+.certificate-body {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(290px, 0.85fr) minmax(300px, 1.15fr);
+  gap: 12px;
+  padding: 12px;
+  overflow: hidden;
+  align-items: stretch;
+}
+.certificate-form,
+.certificate-results {
+  padding: 16px;
+  background: white;
+  border: 1px solid #dce4ed;
+  border-radius: 7px;
+  min-width: 0;
+  min-height: 0;
+  overflow: auto;
+}
+.certificate-tool fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+.certificate-tool label {
+  display: grid;
+  gap: 6px;
+  margin: 12px 0;
+  font-size: 12px;
+}
+.certificate-tool input:not([type='checkbox']),
+.certificate-tool textarea,
+.certificate-tool select {
+  width: 100%;
+  min-width: 0;
+  padding: 8px;
+  border: 1px solid #cedbe7;
+  border-radius: 4px;
+  color: #263e55;
+  background: white;
+  font: inherit;
+}
+.certificate-tool textarea {
+  resize: vertical;
+}
+.certificate-tool .certificate-check {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  line-height: 1.5;
+}
+.certificate-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.certificate-tool details {
+  border-top: 1px solid #e4ebf0;
+  padding-top: 10px;
+  margin: 12px 0;
+  font-size: 12px;
+}
+.certificate-tool summary {
+  cursor: pointer;
+}
+.certificate-note {
+  margin: 0 0 12px;
+  padding: 8px 10px;
+  background: #eef7f5;
+  border-radius: 4px;
+}
+.certificate-redirect {
+  padding: 0 10px;
+  border: 1px solid #dce4ed;
+  border-radius: 4px;
+  background: #f8fafc;
+}
+.certificate-redirect p {
+  margin: 0 0 10px;
+}
+.certificate-redirect .certificate-existing-redirect {
+  color: #785514;
+  overflow-wrap: anywhere;
+}
+.certificate-tool .certificate-error {
+  color: #b63030;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.certificate-placeholder {
+  text-align: center;
+  color: #7e92a5;
+  padding: 32px 0;
+}
+.certificate-tool dl {
+  display: grid;
+  grid-template-columns: 70px minmax(0, 1fr);
+  font-size: 12px;
+  gap: 9px;
+}
+.certificate-tool dt {
+  color: #718299;
+}
+.certificate-tool dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.certificate-preview-tabs {
+  display: flex;
+  gap: 4px;
+  margin-top: 18px;
+}
+.certificate-preview-tabs .active {
+  color: #008874;
+  background: #e1f3ed;
+}
+.certificate-code {
+  max-height: 340px;
+  overflow: auto;
+  padding: 8px 0;
+  border: 1px solid #dce4ed;
+  background: #f8fafc;
+  font:
+    12px/1.6 Consolas,
+    monospace;
+}
+.certificate-code > div {
+  display: flex;
+  min-width: max-content;
+}
+.certificate-code span {
+  flex: 0 0 36px;
+  color: #8695a5;
+  text-align: right;
+  padding-right: 9px;
+  user-select: none;
+  border-right: 1px solid #e4ebf0;
+}
+.certificate-code code {
+  padding: 0 10px;
+  font: inherit;
+}
+.certificate-job {
+  margin-top: 18px;
+  border-top: 1px solid #dce4ed;
+  padding-top: 14px;
+}
+.certificate-job pre {
+  max-height: 280px;
+  overflow: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  background: #101a25;
+  color: #d6e4ef;
+  padding: 12px;
+  font:
+    12px/1.6 Consolas,
+    monospace;
+}
+.certificate-job p {
+  overflow-wrap: anywhere;
+  margin: 5px 0;
+}
+@media (max-width: 1150px) {
+  .certificate-body {
+    display: block;
+    overflow: auto;
+  }
+  .certificate-form,
+  .certificate-results {
+    overflow: visible;
+    margin-bottom: 12px;
+  }
+}

@@ -1,0 +1,7 @@
+node_modules
+dist
+dist-electron
+release
+test-results
+.npm-cache
+package-lock.json

@@ -1,0 +1,83 @@
+.update-settings {
+  border-top: 1px solid #dce5ed;
+  padding-top: 16px;
+  margin: 18px 0;
+}
+.update-settings h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.update-settings small {
+  font-weight: normal;
+  color: #71839a;
+}
+.update-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 12px 0;
+}
+.update-actions button {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.update-settings .update-checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0;
+}
+.update-checkbox input {
+  width: auto;
+  margin: 0;
+}
+.update-backdrop {
+  z-index: 1000;
+}
+.update-modal {
+  width: min(560px, 90vw);
+}
+.update-modal .modal-content {
+  max-height: 70vh;
+  overflow: auto;
+}
+.update-notes {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font: inherit;
+  line-height: 1.7;
+  max-height: 35vh;
+  overflow-y: auto;
+  background: #f4f7fa;
+  padding: 12px;
+}
+.update-error {
+  color: #b93737;
+  overflow-wrap: anywhere;
+}
+.update-modal progress,
+.update-settings progress {
+  width: 100%;
+  accent-color: #0d9f8d;
+}
+.update-install-progress {
+  padding: 16px;
+  margin: 14px 0;
+  background: #edf6f4;
+  border: 1px solid #bcdbd3;
+  border-radius: 7px;
+}
+.update-install-progress strong {
+  display: block;
+  margin-top: 12px;
+}
+.update-install-progress p {
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+.update-install-progress progress {
+  height: 12px;
+}

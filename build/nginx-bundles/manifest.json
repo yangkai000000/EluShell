@@ -1,0 +1,22 @@
+[
+  {
+    "version": "1.30.5",
+    "prefix": "/usr/local/nginx",
+    "sha256": "8ae87df17fb37d63121fccf31501d61fd35ce6069674440f9ff70f5d486a954e",
+    "config": "conf/nginx.conf",
+    "minGlibc": "2.28",
+    "pid": "logs/nginx.pid",
+    "bytes": 8205032,
+    "arch": "x86_64"
+  },
+  {
+    "version": "1.30.5",
+    "prefix": "/usr/local/nginx",
+    "sha256": "7604c689e17e8a03404d381f1000fcd83ba551108d521eaa3894bd09dd5a8779",
+    "config": "conf/nginx.conf",
+    "minGlibc": "2.28",
+    "pid": "logs/nginx.pid",
+    "bytes": 7733704,
+    "arch": "aarch64"
+  }
+]

@@ -1,0 +1,103 @@
+.nginx-steps {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  padding: 12px 24px;
+  margin: 0;
+  border-bottom: 1px solid #dce4ed;
+  background: #fff;
+  font-size: 12px;
+}
+.nginx-steps li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #8291a0;
+}
+.nginx-steps b {
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #eef1f5;
+}
+.nginx-steps .active {
+  color: #008773;
+  font-weight: 600;
+}
+.nginx-steps .active b {
+  background: #008773;
+  color: white;
+}
+.nginx-intro {
+  padding: 50px 20px;
+  text-align: center;
+  color: #199c89;
+}
+.nginx-intro h3 {
+  margin-top: 20px;
+}
+.nginx-checks {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 16px;
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+}
+.nginx-checks li > div {
+  min-width: 0;
+}
+.nginx-checks li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eef1f5;
+  font-size: 12px;
+}
+.nginx-checks svg {
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.nginx-checks .ok svg {
+  color: #098773;
+}
+.nginx-checks .blocked {
+  color: #b34e15;
+}
+.nginx-checks p {
+  margin: 3px 0 0;
+  overflow-wrap: anywhere;
+}
+.nginx-confirm {
+  padding: 12px;
+  border: 1px solid #cbe3dc;
+  border-radius: 6px;
+  background: #f5fbf9;
+}
+.nginx-result progress {
+  width: 100%;
+  height: 12px;
+  accent-color: #008773;
+}
+.nginx-result pre {
+  max-height: 340px;
+  overflow: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  background: #101a25;
+  color: #d6e4ef;
+  padding: 12px;
+  font:
+    12px/1.7 Consolas,
+    monospace;
+}
+.nginx-result > button {
+  margin: 6px 10px 6px 0;
+}
+.nginx-upgrade .certificate-error {
+  max-height: 180px;
+  overflow: auto;
+}

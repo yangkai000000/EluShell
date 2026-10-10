@@ -1,0 +1,199 @@
+.compact-connections {
+  width: 1000px;
+  height: 700px;
+}
+.compact-connections > .modal-header {
+  padding: 14px 18px;
+  min-height: 58px;
+}
+.compact-connections .connection-content {
+  position: relative;
+}
+.compact-connections .connection-list {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-right: 0;
+  padding: 0;
+  background: #fff;
+}
+.connection-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 8px 12px;
+  flex: none;
+  border-bottom: 1px solid #e2e8ef;
+}
+.connection-toolbar .connection-sharing {
+  margin: 0;
+}
+.connection-toolbar > input {
+  margin-left: auto;
+  width: min(360px, 50%);
+  height: 30px;
+  padding: 6px 9px;
+  font-size: 12px;
+}
+.connection-columns,
+.compact-connections .profile-item {
+  display: grid;
+  grid-template-columns: minmax(200px, 43fr) minmax(140px, 29fr) minmax(55px, 10fr) minmax(
+      90px,
+      18fr
+    );
+  align-items: center;
+  column-gap: 8px;
+}
+.connection-columns {
+  flex: none;
+  min-height: 27px;
+  padding: 0 14px 0 10px;
+  border-bottom: 1px solid #e2e8ef;
+  background: #f3f6f9;
+  color: #8192a4;
+  font-size: 11px;
+}
+.connection-columns > span:first-child {
+  padding-left: 22px;
+}
+.connection-tree-scroll {
+  overflow-y: auto;
+  overflow-x: hidden;
+  min-height: 0;
+  flex: 1;
+  padding: 4px 6px 10px;
+  scrollbar-width: thin;
+}
+.compact-connections .profile-item {
+  width: 100%;
+  min-height: 26px;
+  height: 26px;
+  margin: 0;
+  padding: 0 8px 0 4px;
+  border: 0;
+  border-radius: 2px;
+  text-align: left;
+  background: transparent;
+  line-height: 26px;
+  color: #294155;
+}
+.compact-connections .profile-item:hover {
+  background: #f0f6f8;
+}
+.compact-connections .profile-item.selected {
+  background: #dff1ee;
+}
+.compact-connections .profile-item > span {
+  display: block;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 12px;
+}
+.compact-connections .profile-item .connection-name {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.compact-connections .profile-item .connection-name svg {
+  flex: none;
+  color: #648094;
+}
+.compact-connections .profile-item b {
+  font-size: 12px;
+  font-weight: 400;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.compact-connections .connection-folder {
+  min-height: 27px;
+  height: 27px;
+  margin: 0;
+  padding-right: 8px;
+  gap: 5px;
+  border-radius: 2px;
+}
+.compact-connections .folder-select {
+  font-size: 12px;
+  min-width: 0;
+}
+.compact-connections .folder-select svg {
+  color: #ba922d;
+}
+.compact-connections .connection-folder small {
+  margin-left: auto;
+  color: #8a9bac;
+  font-size: 10px;
+  flex: none;
+}
+.compact-connections .folder-root {
+  margin: 0 0 3px;
+  padding: 5px 8px;
+  min-height: 27px;
+  font-size: 12px;
+}
+.connection-list-status {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 7px 12px;
+  min-height: 30px;
+  flex: none;
+  border-top: 1px solid #e0e8ee;
+  font-size: 11px;
+  color: #7590a3;
+}
+.connection-list-status > span {
+  min-width: 0;
+  max-width: 35%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.connection-list-status > small {
+  margin-left: auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.connection-editor-layer {
+  position: fixed;
+  inset: 0;
+  background: #172c4455;
+  z-index: 110;
+  display: grid;
+  place-items: center;
+}
+.connection-editor-dialog {
+  width: 740px;
+  max-width: 92vw;
+  max-height: 92vh;
+  display: flex;
+  flex-direction: column;
+}
+.connection-editor-dialog > .modal-header {
+  flex: none;
+  padding: 14px 20px;
+}
+.connection-editor-dialog .profile-form {
+  padding: 16px 22px;
+  overflow: auto;
+  min-height: 0;
+}
+.connection-editor-dialog .form-actions {
+  margin-top: 16px;
+}
+.connection-delete-dialog {
+  width: 460px;
+  max-width: 90vw;
+}
+.connection-delete-dialog p {
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}

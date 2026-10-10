@@ -1,0 +1,25 @@
+node_modules/
+dist/
+dist-electron/
+release/
+test-results/
+*.log
+.npm-cache/
+.local-private/
+docs/RELEASING.md
+
+# Local build output, assistant state and secrets
+artifacts/
+.claude/
+.codex/
+.agents/
+.aws/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
